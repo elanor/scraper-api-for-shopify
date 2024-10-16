@@ -97,13 +97,13 @@ While working on this scraper, one significant issue encountered was the cross-o
 
 ## To overcome this:
 
-    ### Handling Cross-Origin Restrictions:
+    1. Handling Cross-Origin Restrictions:
         We used a try-catch block to safely access cssRules. If the stylesheet is external and throws a SecurityError, the scraper skips that stylesheet and continues processing others.
         This prevents the scraper from crashing while still capturing as much font information as possible from accessible stylesheets.
 
-    ### Fallback for Local Fonts:
+    2. Fallback for Local Fonts:
         When no external fonts are found, or when access to external stylesheets is blocked, the scraper falls back to extracting the font-family from the page's body element or other inline styles.
         This ensures that even if no external fonts are used, we can still extract relevant font information (e.g., local or theme-specific fonts).
 
-    ### TypeScript Handling:
+    3. TypeScript Handling:
         TypeScript type assertions were used to handle type issues, particularly when dealing with link elements for fonts. Type assertions ensure that TypeScript recognizes elements like <link> tags as HTMLLinkElement objects, enabling access to properties such as href.
