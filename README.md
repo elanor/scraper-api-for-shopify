@@ -85,6 +85,7 @@ The scraper will output the extracted font and button styles in JSON format, suc
     "border-radius": "4px"
   }
 }
+```
 
 # Notes
 ## Shopify URLs
