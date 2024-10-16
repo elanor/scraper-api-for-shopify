@@ -56,7 +56,12 @@ Before you can run this project, make sure you have the following installed on y
 6. **Run the scraper**:
     The scraper will loop through a predefined set of Shopify product URLs and print the extracted font and button styles to the console.
     ```bash
-    node dist/scraper.js
+    node scraper.js
+    ```
+7. **To recompile and run again**:
+    ```bash
+    npx tsc
+    node scraper.js
     ```
 
 ## Example Output

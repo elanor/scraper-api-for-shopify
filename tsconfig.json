@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES2015",                // Use ES2015 (ES6) or higher
-    "module": "commonjs",               // Use Node.js-style modules
-    "moduleResolution": "node",         // Resolve modules in Node.js-style
-    "esModuleInterop": true,            // Enable interoperability with ES modules
-    "skipLibCheck": true,               // Skip type checking of all declaration files
-    "strict": true,                     // Enable all strict type-checking options
-    "outDir": "./dist"                  // Specify the output directory for compiled files
+    "target": "ES2015",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "outDir": "./dist"
   },
-  "include": ["./scraper.ts"],           // Specify the input TypeScript file
-  "exclude": ["node_modules"]            // Exclude node_modules from being compiled
+  "include": ["./scraper.ts"],
+  "exclude": ["node_modules"]
 }
